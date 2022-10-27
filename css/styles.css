@@ -64,7 +64,7 @@ div.container{
     flex-direction: row;
     align-content: space-between;
     margin: 150px 30px;
-    gap: 20px;
+    gap: 10px;
 }
 div.cards{
     position: relative;
