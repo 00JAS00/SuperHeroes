@@ -1,26 +1,28 @@
+/* GOOGLE FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 html{
-    background: #FFFFFF;
+    background:#E5E5E5;;
     font-family: 'Questrial', sans-serif;
     font-weight: 400;
+    font-style: normal;
     position: relative;
-    width: 1024px;
-    height: 1024px;
-
-    
+    width: 100%;
 }
 
 /* BAR DISCOUNT */
 
 
 .barDiscount{
-    width: 1024px;
+    width: 100%;
     height: 38px;
     background: #1CD1B0;
 }
@@ -36,8 +38,8 @@ html{
 /* HEADER */
 
 header{
-    width: 1024px;
-    height: 101px;
+    width: 100%;
+    height: 0.101%;
     background: #00669F;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
 }
@@ -57,11 +59,12 @@ h1{
 div.container{
     display: flex;
     position:relative;
-
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
     align-content: space-between;
     margin: 150px 30px;
-    background-color: aqua;
+    gap: 20px;
 }
 div.cards{
     position: relative;
@@ -84,13 +87,75 @@ div.cards{
     top: 130px;
     right: 93px;
 }
+div.icon{
+    position: absolute;
+    top: 3%;
+    left: 6%;
+}
+
 .name{
-    text-align: center;
-    text-transform: uppercase;
+    
     font-style: normal;
     font-size: 30px;
     line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
     padding-top: 74px;
     padding-bottom: 10px;
-    background-color: #0fc72e;
 }
+p.description{
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    padding-left: 16px;
+    padding-right: 16px;  
+    margin-bottom: 37px;  
+}
+button{
+    background-color: #00669F;
+    width: 128.78px;
+    height: 48.52px;
+    border:none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+    color: #F3F3F3;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+/* FOOTER */
+
+footer{
+    height: 51px;
+    background: #00669F;
+    padding: 16px 20px;
+}
+footer>P{
+    text-align: left;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF9F9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
