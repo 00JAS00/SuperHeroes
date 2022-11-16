@@ -1,0 +1,63 @@
+
+html{
+    box-sizing: border-box;
+}
+/* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+/* formulario central */
+form{
+    background-color: #00669F;
+    border-radius: 10%;
+    margin: 2.5rem;
+    text-align: center;
+
+}
+/* titulo y sub*/
+.titulo-form{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    text-transform: capitalize;
+    color: #fbfffd;
+}
+.subt-form{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fbfffd; 
+}
+
+    /* contenedor */
+.container-form{
+    display: flex;
+    width: 100%;
+    padding: 1.25rem;
+}
+.one{
+    width: 50%;
+}
+label{
+    text-transform: capitalize;
+}
+/* mitad izquierda del formulario */
+.one{
+    text-align: left;
+}
+.one input{
+display: block;
+width: 50%;
+}
+.one article{
+    padding:0 0 1.9rem 0;
+}
+/* nombre */
+/* mitad derecha del formulario */
+.two{
+    display: flex;
+    flex-direction: columm;
+}
+
+

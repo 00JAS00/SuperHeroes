@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <!-- FONT GOOLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/21f58f240a.js" crossorigin="anonymous"></script>
+    <title>Add Hero</title>
+</head>
+<body>
+    
+
+    <!-- HEADER -->
+    
+
+    <header>
+        <div class="barDiscount">
+            <p>Descuentos 20%</p>
+        </div>
+        <div class="title">
+            <i class="store fa-solid fa-store"></i>
+            <h1>Heroes</h1>
+        </div>
+        <div class="home">
+            <ul>
+                <li>contacto</li>
+                <li>registrarme</li>
+                <li>ingresar</li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+            <form class="form-add" action="GET">
+                <!-- tituto -->
+                <h2 class="titulo-form">añadí tu super!</h1>
+                <p class="subt-form">Agregá tu personaje favorito completando las opciones</p>
+                <div class="container-form">
+                    <!-- mitad izquierda del formulario -->
+                    <section class="one">
+                        <!-- nombre -->
+                        <article>
+                            <label for="nombre">nombre</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </article>
+                        <!-- fecha -->
+                        <article>
+                            <label for="fecha">fecha
+                                <input type="date" name="nombre" id="fecha" required>
+                            </label>
+                            
+                        </article>
+                        <!-- comentario -->
+                        <article>
+                            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                        </article>
+                    </section>
+                    <!-- mitad derecha del formulario -->
+                    <section class="two">
+                        <!-- especie -->
+                        <article>
+                            <label for="especie">
+                                especie
+                                <select name="especie" id="especie" required>
+                                    <option value="one">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="unknown" selected>unknown</option>
+                                </select>
+                            </label>
+                        </article>
+                        <!-- añadir foto -->
+                        <article>
+                            <label for="photo-add">agregar foto</label>
+                            <input type="file" name="photo-add" id="photo-add" accept=".jpg">
+                        </article>
+                        <!-- poderes -->
+                        <article>
+                            <fieldset>
+                                <legend>poderes</legend>
+                                <label for="poderes">
+                                    <input type="checkbox" name="poderes" value="volar">
+                                        volar
+                                    </label>
+                                    <label for="poderes">
+                                        <input type="checkbox" name="poderes" value="superinteligencia">
+                                        super inteligencia
+                                    </label>
+                                    <label for="poderes">
+                                        <input type="checkbox" name="poderes" value="vistarayolaser">
+                                        vista rayo laser
+                                    </label>
+                                    <label for="poderes">
+                                        <input type="checkbox" name="poderes" value="millonario">
+                                        millonario
+                                    </label>
+                            </fieldset>
+                        </article>
+                        <hr>
+                        <!-- tipo de personaje -->
+                        <article>
+                            <fieldset>
+                                <legend>tipo de personaje</legend>
+                                <label for="supervillano">
+                                    supervillano/na
+                                    <input type="radio" name="tpo-pers" value="villano">
+                                </label>
+                                <label for="superheroe">
+                                    superheroe/ina
+                                    <input type="radio" name="tpo-pers" value="heroe">
+                                </label>
+                            </fieldset> 
+                            </select>
+                        </article>
+                    </section>
+                </div>
+                <button type="submit">añadir</button>
+            </form>
+        </div>
+    </main>
+    
+
+        <!-- FOOTER -->
+
+
+    <footer>
+        <p>Todos los derechos reservados a  Julian Sosa</p>
+    </footer>
+</body>
+</html>
