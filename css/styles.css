@@ -90,7 +90,7 @@ div.container{
     justify-content: space-around;
     flex-direction: row;
     align-content: space-between;
-    margin: 150px 30px;
+    margin: 9.3px 1.8rem;
     gap: 1.15rem;
 }
 div.cards{
