@@ -12,12 +12,13 @@ main{
 form{
     background-color: #00669F;
     border-radius: 10%;
-    margin: 2.5rem;
-    text-align: center;
-
+    margin: 2.5rem /* 15rem */;
+    padding:0 6.2rem ;
 }
+
 /* titulo y sub*/
 .titulo-form{
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 4.5rem;
@@ -25,6 +26,7 @@ form{
     color: #fbfffd;
 }
 .subt-form{
+    text-align: center;
     font-size: 1.2rem;
     font-weight: 300;
     color: #fbfffd; 
@@ -35,29 +37,61 @@ form{
     display: flex;
     width: 100%;
     padding: 1.25rem;
+    gap: 1.5rem;
 }
-.one{
-    width: 50%;
-}
+
 label{
+    font-weight: 300;
+    font-size: 1.25rem;
     text-transform: capitalize;
+    color: #FFFFFF;
+}
+label>p{
+    padding-bottom: 1rem;
+}
+article{
+    padding-top: 1.25rem;
 }
 /* mitad izquierda del formulario */
 .one{
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
 }
 .one input{
 display: block;
-width: 50%;
+width: 100%;
+padding: 1.2rem 0;
+background: #FFFFFF;
+border: 0.09rem solid rgba(0, 0, 0, 0.1);
+border-radius: 0.9rem;
 }
-.one article{
-    padding:0 0 1.9rem 0;
+
+textarea#comentario{
+    height:19rem;
+    width: 100%;
+    background: #FFFFFF;
+    border: 0.09rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.9rem;
+}
+#comentario::placeholder{
+    padding: 1.25rem 0.6rem;
 }
 /* nombre */
 /* mitad derecha del formulario */
 .two{
     display: flex;
-    flex-direction: columm;
+    flex-direction: column;
+    width: 100%;
 }
+select#especie{
+    width: 100%;
+    padding: 1.2rem 0;
+    background: #FFFFFF;
+    border: 0.09rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.9rem;
+}
+
 
 

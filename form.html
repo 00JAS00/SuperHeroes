@@ -43,31 +43,35 @@
                 <h2 class="titulo-form">añadí tu super!</h1>
                 <p class="subt-form">Agregá tu personaje favorito completando las opciones</p>
                 <div class="container-form">
+
+
                     <!-- mitad izquierda del formulario -->
                     <section class="one">
                         <!-- nombre -->
                         <article>
-                            <label for="nombre">nombre</label>
+                            <label for="nombre"><p>nombre</p></label>
                             <input type="text" name="nombre" id="nombre" required>
                         </article>
                         <!-- fecha -->
                         <article>
-                            <label for="fecha">fecha
-                                <input type="date" name="nombre" id="fecha" required>
+                            <label for="fecha"><p>fecha</p>
+                                <input type="date" name="fecha" id="fecha" required>
                             </label>
                             
                         </article>
                         <!-- comentario -->
                         <article>
-                            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                            <textarea name="comentario" id="comentario" placeholder="Descripción"></textarea>
                         </article>
                     </section>
+
+
                     <!-- mitad derecha del formulario -->
                     <section class="two">
                         <!-- especie -->
                         <article>
                             <label for="especie">
-                                especie
+                                <p>especie</p>
                                 <select name="especie" id="especie" required>
                                     <option value="one">1</option>
                                     <option value="two">2</option>
@@ -78,7 +82,7 @@
                         </article>
                         <!-- añadir foto -->
                         <article>
-                            <label for="photo-add">agregar foto</label>
+                            <label for="photo-add"><p>agregar foto</p></label>
                             <input type="file" name="photo-add" id="photo-add" accept=".jpg">
                         </article>
                         <!-- poderes -->
