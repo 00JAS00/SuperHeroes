@@ -91,7 +91,7 @@ div.container{
     flex-direction: row;
     align-content: space-between;
     margin: 150px 30px;
-    gap: 1.25rem;
+    gap: 1.15rem;
 }
 div.cards{
     position: relative;
