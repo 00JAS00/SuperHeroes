@@ -71,9 +71,6 @@ border-radius: 0.9rem;
 textarea#comentario{
     height:19rem;
     width: 100%;
-    background: #FFFFFF;
-    border: 0.09rem solid rgba(0, 0, 0, 0.1);
-    border-radius: 0.9rem;
 }
 #comentario::placeholder{
     padding: 1.25rem 0.6rem;
