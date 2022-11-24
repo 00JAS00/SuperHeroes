@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 html{
     background:#E5E5E5;;
