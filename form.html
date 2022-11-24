@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/form.css">
     <!-- FONT GOOLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/21f58f240a.js" crossorigin="anonymous"></script>
     <title>Add Hero</title>
@@ -29,29 +29,44 @@
         </div>
         <div class="home">
             <ul>
-                <li>contacto</li>
-                <li>registrarme</li>
-                <li>ingresar</li>
+                <li><a href="">contacto</a> </li>
+                <li><a href="">registrarme</a></li>
+                <li><a href="">ingresar</a> </li>
             </ul>
         </div>
 
     </header>
     <main>
             <form class="form-add" action="GET">
-                <!-- tituto -->
-                <div class="encabezado-form">
-                    <h2 class="titulo-form">añadí tu super!</h1>
-                    <p class="subt-form">Agregá tu personaje favorito completando las opciones</p>
-                </div>
+                <!-- encabezado -->
+                <h2 class="titulo-form">añadí tu super!</h1>
+                <p class="subt-form">Agregá tu personaje favorito completando las opciones</p>
                 <div class="container-form">
 
-                    <!-- arriba del formulario -->
+
+                    <!-- mitad izquierda del formulario -->
                     <section class="one">
                         <!-- nombre -->
                         <article>
                             <label for="nombre"><p>nombre</p></label>
                             <input type="text" name="nombre" id="nombre" required>
                         </article>
+                        <!-- fecha -->
+                        <article>
+                            <label for="fecha"><p>fecha</p>
+                                <input type="date" name="fecha" id="fecha" required>
+                            </label>
+                            
+                        </article>
+                        <!-- comentario -->
+                        <article>
+                            <textarea name="comentario" id="comentario" placeholder="Descripción"></textarea>
+                        </article>
+                    </section>
+
+
+                    <!-- mitad derecha del formulario -->
+                    <section class="two">
                         <!-- especie -->
                         <article>
                             <label for="especie">
@@ -64,38 +79,15 @@
                                 </select>
                             </label>
                         </article>
-                    </section>
-
-
-                    <!-- medio del formulario -->
-                    <section class="two">
-                        <!-- fecha -->
-                        <article>
-                            <label for="fecha"><p>fecha</p>
-                                <input type="date" name="fecha" id="fecha" required>
-                            </label>
-                            
-                        </article>
                         <!-- añadir foto -->
                         <article>
                             <label for="photo-add"><p>agregar foto</p></label>
                             <input type="file" name="photo-add" id="photo-add" accept=".jpg">
                         </article>
-                        
-                    </section>
-
-                    <!-- abajo del formulario -->
-                    <section class="three">
-
-                        <!-- comentario -->
-                        <article>
-                            <textarea name="comentario" id="comentario" placeholder="Descripción"></textarea>
-                        </article>
-
                         <!-- poderes -->
                         <article>
                             <fieldset>
-                                <legend>poderes</legend>
+                                <legend>Poderes</legend>
                                 <label for="poderes">
                                     <input type="checkbox" name="poderes" value="volar">
                                         volar
@@ -113,35 +105,35 @@
                                         millonario
                                     </label>
                             </fieldset>
-                        
-
-                            <hr>
-
+                        </article>
+                        <hr>
                         <!-- tipo de personaje -->
-
-                        
+                        <article>
                             <fieldset>
-                                <legend>tipo de personaje</legend>
+                                <legend>Tipo de personaje</legend>
                                 <label for="supervillano">
-                                    supervillano/na
                                     <input type="radio" name="tpo-pers" value="villano">
+                                    villano / villana
                                 </label>
                                 <label for="superheroe">
-                                    superheroe/ina
                                     <input type="radio" name="tpo-pers" value="heroe">
+                                    heroe / heroina
                                 </label>
                             </fieldset> 
                             </select>
                         </article>
                     </section>
                 </div>
-                <button type="submit">añadir</button>
+                <div class="btn">
+                    <button type="submit">añadir</button>
+                </div>
             </form>
         </div>
     </main>
     
 
         <!-- FOOTER -->
+
 
     <footer>
         <p>Todos los derechos reservados a  Julian Sosa</p>

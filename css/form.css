@@ -1,22 +1,104 @@
 
-html{
+*{
+    margin:0px;
+    padding: 0px;
+    /* outline: 1px solid red; */
     box-sizing: border-box;
 }
-/* MAIN */
+html{
+    height: 100vh;
+    background:#E5E5E5;;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+
+
+        /* BAR DISCOUNT */
+
+        .barDiscount{
+            background: #1CD1B0;
+        }
+        .barDiscount p{
+            
+            font-style: normal;
+            font-size: 0.9rem;
+            line-height: 1.18rem;
+            padding: 0.6rem 1.6rem;
+            color: #000000;
+        }
+        
+                /* TITLE */
+        
+        .title{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding:0 0.6rem;
+            width: 100%;
+            background: #00669F;
+            box-shadow: 0px 0.6rem 0.4rem rgba(0, 0, 0, 0.25);
+        }
+        .store{
+            font-size: 5rem;
+            color:white;
+            
+        }
+        h1{
+            color: white;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            padding: 1.75rem 1.75rem 1.6rem;
+            
+        }
+                /* HOME */
+        
+        .home{
+            background-color: #001d2d;
+            boX-shadow:0 0.25rem 0.25rem rgba(0,0,0,0.25);
+            width: 100%;
+        }
+        .home>ul{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 1.2rem;
+            color:white;
+            list-style: none;
+            padding: 0.6rem 1.2rem;
+        }
+
+
+            /* MAIN */
+
+
 main{
     display: flex;
     justify-content: center;
-    
 }
+
 /* formulario central */
+
 form{
     background-color: #00669F;
     border-radius: 10%;
-    margin: 2.5rem /* 15rem */;
+    margin: 2.5rem;
     padding:0 6.2rem ;
 }
 
-/* titulo y sub*/
+/* Encabezado*/
 .titulo-form{
     text-align: center;
     font-size: 2.5rem;
@@ -33,6 +115,8 @@ form{
 }
 
     /* contenedor */
+
+
 .container-form{
     display: flex;
     width: 100%;
@@ -56,7 +140,7 @@ article{
 .one{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
 
 }
 .one input{
@@ -67,27 +151,107 @@ background: #FFFFFF;
 border: 0.09rem solid rgba(0, 0, 0, 0.1);
 border-radius: 0.9rem;
 }
+/* nombre */
 
+/* Comentario */
 textarea#comentario{
     height:19rem;
     width: 100%;
+    border: 0.09rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.9rem;
+
 }
 #comentario::placeholder{
     padding: 1.25rem 0.6rem;
 }
-/* nombre */
+
 /* mitad derecha del formulario */
 .two{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
 }
 select#especie{
     width: 100%;
-    padding: 1.2rem 0;
+    padding: 1.1rem 0;
     background: #FFFFFF;
     border: 0.09rem solid rgba(0, 0, 0, 0.1);
     border-radius: 0.9rem;
+}
+
+/* añadir foto */
+
+input#photo-add{
+    padding: 1.2rem 0;
+}
+
+/* poderes y tipo de personaje*/
+
+article>fieldset{
+    border:none;
+    display: flex;
+    flex-direction: column;
+}
+article>fieldset>legend{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    padding-bottom: 0.75rem;
+}
+fieldset>label{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom:0.75rem;
+    color: #FFFFFF;
+}
+hr{
+    border: 1px solid #CCCCCC;
+    width: 100%;
+}
+
+/* buttom */
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+button{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+
+color: #000000;
+    width: 65%;
+    padding: 1.3rem 0;
+    background: #1CD1B0;
+    border-radius: 1.3rem;
+    border: none;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+} 
+button:hover{
+    cursor: pointer;
+    background-color: #001D2D;;
+    color: #FFFFFF;
+}
+
+
+/* FOOTER */
+
+footer{
+    background: #00669F;
+    padding: 1rem 1.25rem;
+    width: 100%;
+}
+footer>p{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.18rem;
+    color: #FFF9F9;
 }
 
 
